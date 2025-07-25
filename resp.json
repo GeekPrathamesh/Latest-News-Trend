@@ -1,112 +1,110 @@
-business
-entertainment
-general
-health
-science
-sports
-technology
-business
-entertainment
-general
-health
-science
-sports
-technology
-business
-entertainment
-general
-health
-science
-sports
-technology
-business
-entertainment
-general
-health
-science
-sports
-technology
-business
-entertainment
-general
-health
-science
-sports
-technology
-business
-entertainment
-general
-health
-science
-sports
-technology
-business
-entertainment
-general
-health
-science
-sports
-technology
-business
-entertainment
-general
-health
-science
-sports
-technology
-business
-entertainment
-general
-health
-science
-sports
-technology
-business
-entertainment
-general
-health
-science
-sports
-technology
-business
-entertainment
-general
-health
-science
-sports
-technology
-business
-entertainment
-general
-health
-science
-sports
-technology
-business
-entertainment
-general
-health
-science
-sports
-technology
-business
-entertainment
-general
-health
-science
-sports
-technology
-business
-entertainment
-general
-health
-science
-sports
-technology
-business
-entertainment
-general
-health
-science
-sports
-technology
+{
+"status": "ok",
+"totalResults": 69,
+"articles": [
+{
+"source": {
+"id": null,
+"name": "NPR"
+},
+"author": "",
+"title": "You can't outrun a bad diet. Food not lack of exercise fuels obesity, study finds - NPR",
+"description": "One explanation for the rise in obesity in industrialized countries is that people burn fewer calories than people in countries where obesity is rare. A major study finds that's not the case.",
+"url": "https://www.npr.org/2025/07/24/nx-s1-5477662/diet-exercise-obesity-nutrition",
+"urlToImage": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2121x1193+0+0/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa2%2F97%2F8a9420b54bfbbdd7d19f71a731d2%2Fgettyimages-1732758501.jpg",
+"publishedAt": "2025-07-24T09:00:00Z",
+"content": "Back in the 1800s, obesity was almost nonexistent in the United States. Over the last century, it's become common here and in other industrialized nations, though it remains rare among people who liv… [+4918 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "ScienceAlert"
+},
+"author": "Russell McLendon",
+"title": "COVID Can Cause Alzheimer's-Like Plaques in Eyes And Brain - ScienceAlert",
+"description": "COVID-19 could lead to a protein build-up similar to that seen in Alzheimer's patients – not just in the brain, but also in the eyes, according to a new study.",
+"url": "https://www.sciencealert.com/covid-can-cause-alzheimers-like-plaques-in-eyes-and-brain",
+"urlToImage": "https://www.sciencealert.com/images/2025/07/human-retina.jpg",
+"publishedAt": "2025-07-24T04:29:02Z",
+"content": "COVID-19 could lead to a protein build-up similar to that seen in Alzheimer's patients not just in the brain, but also in the eyes, according to a new study. This may explain why 'brain fog', an umb… [+4417 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "Financial Times"
+},
+"author": null,
+"title": "The Brains of Wellbeing & Beauty: cracking the longevity code - Financial Times",
+"description": "In the second instalment of the talk series, HTSI speaks to the entrepreneurs, innovators and practitioners pioneering a longer life",
+"url": "https://www.ft.com/content/21099edd-3f05-4a98-a8e2-2af73c7e6c70",
+"urlToImage": "https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fea8fd41c-200b-4c89-af2d-f74eb3e9ec98.jpg?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1",
+"publishedAt": "2025-07-24T04:00:45Z",
+"content": "In the second instalment of the talk series, HTSI speaks to the entrepreneurs, innovators and practitioners pioneering a longer life"
+},
+{
+"source": {
+"id": null,
+"name": "Earth.com"
+},
+"author": null,
+"title": "Newly discovered 'sixth sense' plays a vital role in human behavior and appetite - Earth.com",
+"description": "Chemical chatter from resident bacteria in the gut can hit the brain and nervous system in real time, shaping behavior and appetite.",
+"url": "https://www.earth.com/news/neurobiotic-sixth-sense-gut-brain-connection-flagellin-plays-vital-role-behavior-appetite/",
+"urlToImage": "https://cff2.earth.com/uploads/2025/07/23185504/gut-brain-connection_flagellin_vagus-nerve_sixth-sense_1m.jpg",
+"publishedAt": "2025-07-24T01:26:08Z",
+"content": "The human gut and the human brain share a hotline that scientists have been mapping for decades. Nutrients such as sugar and fat trigger signals that travel from the digestive tract to nerve centers … [+6432 chars]"
+},
+{
+"source": {
+"id": "buzzfeed",
+"name": "Buzzfeed"
+},
+"author": "Caroline Bologna",
+"title": "Dentists Are Sharing All The Things They Can Tell About A Patient Just By Looking Inside Their Mouth And The Responses Are Surprising - BuzzFeed",
+"description": "They notice a lot more than just cavities and gum health.",
+"url": "https://www.buzzfeed.com/carolinebologna/what-dentists-know-by-looking-mouth-sc",
+"urlToImage": "https://img.buzzfeed.com/buzzfeed-static/static/2024-08/27/18/asset/7f53f4a9289e/sub-buzz-488-1724784327-1.jpg?crop=2121:1414;0,0&resize=1250:830",
+"publishedAt": "2025-07-24T00:31:02Z",
+"content": "When you go to the dentist, youre likely focused on matters like cavities and gum health. But dental experts can detect a lot more from your exam.  A lot about someones overall health can be observe… [+1101 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "Eatingwell.com"
+},
+"author": "https://www.facebook.com/EatingWell/",
+"title": "5 Things to Do Before Bed to Help Lower Blood Pressure, According to a Cardiologist - EatingWell",
+"description": "Bedtime habits to lower blood pressure include avoiding alcohol, taking medication, limiting sodium, mindfulness and creating a restful environment.",
+"url": "https://www.eatingwell.com/things-to-do-before-bed-to-lower-blood-pressure-11777941",
+"urlToImage": "https://www.eatingwell.com/thmb/aMoOKK5g5Nea7X_NELEQ3SP_sbA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Things-to-Do-Before-Bed-for-Better-Blood-Pressure-281cd8b36ccf4b35a38b1e588732af22.jpg",
+"publishedAt": "2025-07-24T00:30:00Z",
+"content": "Maintaining healthy blood pressure is about more than keeping your doctor happy at your checkup. It is a key part of reducing your risk of heart disease, stroke and other serious health issues. When … [+6037 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "ScienceAlert"
+},
+"author": "David Nield",
+"title": "Guided Nanoparticles Reconnect Brain Cells, Raising Hopes For Parkinson's Treatment - ScienceAlert",
+"description": "Broken connections between brain cells play a critical role in multiple neurodegenerative conditions, including Parkinson's disease.",
+"url": "https://www.sciencealert.com/guided-nanoparticles-reconnect-brain-cells-raising-hopes-for-parkinsons-treatment",
+"urlToImage": "https://www.sciencealert.com/images/2025/07/NeuronGraphic.jpg",
+"publishedAt": "2025-07-24T00:01:19Z",
+"content": "Broken connections between brain cells play a critical role in multiple neurodegenerative conditions, including Parkinson's disease. Scientists have now come up with a novel way of repairing our neur… [+2825 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "Parade"
+},
+"author": "Casey Clark",
+"title": "Cardiologists Are Begging People To Stop Doing This One Thing ASAP To Help Prevent Blood Clots - Yahoo Home",
+"description": "Cardiologists weigh in.",
+"url": "https://parade.com/health/habit-to-quit-for-blood-clot-prevention-according-to-cardiologists",
+"urlToImage": "https://media.zenfs.com/en/parade_250/bedc705ec2404294f9d2616fa22bfc99",
+"publishedAt": "2025-07-23T21:25:00Z",
+"content": "Cardiologists Are Begging People To Stop Doing This One Thing ASAP To Help Prevent Blood Clots  originally appeared on Parade. According to the National Blood Clot Alliance, approximately 274 people… [+5541 chars]"
+}
+]
+}

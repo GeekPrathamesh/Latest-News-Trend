@@ -1,32 +1,30 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import Navbar from "./components/Navbar";
 import News from "./components/News";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 
-export default class App extends Component {
-  apiKey = process.env.React_App_News_API;
-  pageSize = 20;
-  state = {
-    progress: 0,
+const App =()=> {
+  const apiKey = process.env.React_App_News_API;
+  const pageSize = 20;
+  const [progress , newprogress] = useState(0)
+
+  const updateProgress = (progress) => {
+    newprogress(progress);
   };
-  updateProgress = (progress) => {
-    this.setState({ progress: progress });
-  };
-  render() {
     return (
       <Router>
         <div>
           <Navbar />
-          <LoadingBar height={3} color="#f11946" progress={this.state.progress} />
+          <LoadingBar height={3} color="#f11946" progress={progress} />
           <Routes>
             <Route
               exact
               path="/"
               element={
-                <News apiKey={this.apiKey} updateProgress={this.updateProgress}
+                <News apiKey={apiKey} updateProgress={updateProgress}
                   key="general"
-                  pageSize={this.pageSize}
+                  pageSize={pageSize}
                   category="general"
                 />
               }
@@ -35,9 +33,9 @@ export default class App extends Component {
               exact
               path="/business"
               element={
-                <News apiKey={this.apiKey} updateProgress={this.updateProgress}
+                <News apiKey={apiKey} updateProgress={updateProgress}
                   key="business"
-                  pageSize={this.pageSize}
+                  pageSize={pageSize}
                   category="business"
                 />
               }
@@ -46,9 +44,9 @@ export default class App extends Component {
               exact
               path="/entertainment"
               element={
-                <News apiKey={this.apiKey} updateProgress={this.updateProgress}
+                <News apiKey={apiKey} updateProgress={updateProgress}
                   key="entertainment"
-                  pageSize={this.pageSize}
+                  pageSize={pageSize}
                   category="entertainment"
                 />
               }
@@ -57,9 +55,9 @@ export default class App extends Component {
               exact
               path="/general"
               element={
-                <News apiKey={this.apiKey} updateProgress={this.updateProgress}
+                <News apiKey={apiKey} updateProgress={updateProgress}
                   key="general-2"
-                  pageSize={this.pageSize}
+                  pageSize={pageSize}
                   category="general"
                 />
               }
@@ -68,16 +66,16 @@ export default class App extends Component {
               exact
               path="/health"
               element={
-                <News apiKey={this.apiKey} updateProgress={this.updateProgress} key="health" pageSize={this.pageSize} category="health" />
+                <News apiKey={apiKey} updateProgress={updateProgress} key="health" pageSize={pageSize} category="health" />
               }
             />
             <Route
               exact
               path="/science"
               element={
-                <News apiKey={this.apiKey} updateProgress={this.updateProgress}
+                <News apiKey={apiKey} updateProgress={updateProgress}
                   key="science"
-                  pageSize={this.pageSize}
+                  pageSize={pageSize}
                   category="science"
                 />
               }
@@ -86,16 +84,16 @@ export default class App extends Component {
               exact
               path="/sports"
               element={
-                <News apiKey={this.apiKey} updateProgress={this.updateProgress} key="sports" pageSize={this.pageSize} category="sports" />
+                <News apiKey={apiKey} updateProgress={updateProgress} key="sports" pageSize={pageSize} category="sports" />
               }
             />
             <Route
               exact
               path="/technology"
               element={
-                <News apiKey={this.apiKey} updateProgress={this.updateProgress}
+                <News apiKey={apiKey} updateProgress={updateProgress}
                   key="technology"
-                  pageSize={this.pageSize}
+                  pageSize={pageSize}
                   category="technology"
                 />
               }
@@ -105,4 +103,5 @@ export default class App extends Component {
       </Router>
     );
   }
-}
+
+export default App;
