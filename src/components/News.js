@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
 import Newsitem from "./Newsitem";
@@ -120,10 +120,10 @@ const News = (props) => {
           dataLength={articles.length}
           next={fetchMoreData}
           hasMore={articles.length !== totalResults}
-          loader={<Spin />}
+           loader={<Spin />}
+         
         >
           <div className="container">
-            {" "}
             <div className="row">
               {articles.map((element) => {
                 return (
@@ -147,6 +147,9 @@ const News = (props) => {
                 );
               })}
             </div>
+
+{/* {loading ? <Spin /> :  articles.length < totalResults && (   <div className="container text-center my-5" onClick={fetchMoreData}><button type="button" className="btn btn-success">Load more..</button></div>)      
+} */}
           </div>
         </InfiniteScroll>
 
