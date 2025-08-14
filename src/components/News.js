@@ -7,7 +7,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 
 const News = (props) => {
   const [articles, updatedarticles] = useState([]);
-  const [loading, isloading] = useState(false);
+  // const [loading, isloading] = useState(false);
   const [page, updatepage] = useState(1);
   const [totalResults, updatedtotalResults] = useState(null);
 
@@ -31,7 +31,7 @@ const News = (props) => {
   const fetchNews = async () => {
     props.updateProgress(10);
     let url = `https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pagesize=${props.pageSize}`;
-    isloading(true);
+    // isloading(true);
     props.updateProgress(70);
 
     let data = await fetch(url);
@@ -42,7 +42,7 @@ const News = (props) => {
 
     updatedarticles(data.articles);
     updatedtotalResults(data.totalResults);
-    isloading(false);
+    // isloading(false);
 
     props.updateProgress(100);
   };
@@ -50,6 +50,7 @@ const News = (props) => {
   useEffect(() => {
     fetchNews();
     document.title = `${capitalize(props.category)} - News-Trend Web-App`;
+    //eslint-disable-next-line
   }, []);
   // handleNext = async () => {
   //   // let url = `https://newsapi.org/v2/top-headlines?country=us&category=${
@@ -92,21 +93,21 @@ const News = (props) => {
   // };
   const fetchMoreData = async () => {
     // this.fetchNews();  not possible because we want to concat the articles
-
+    const nextPage = page + 1; // Calculate the next page number first
+    updatepage(nextPage); // Schedule the state update
     let url = `https://newsapi.org/v2/top-headlines?country=us&category=${
       props.category
     }&apiKey=${props.apiKey}&page=${page + 1}&pagesize=${props.pageSize}`;
     let data = await fetch(url);
     data = await data.json();
 
+    updatedarticles(articles.concat(data.articles));
+    updatedtotalResults(data.totalResults);
+
     if (!data.articles || data.articles.length === 0) {
       updatedtotalResults(articles.length);
       return;
     }
-
-    updatedarticles(articles.concat(data.articles));
-    updatedtotalResults(data.totalResults);
-    updatepage(page + 1);
   };
 
   return (
@@ -119,15 +120,16 @@ const News = (props) => {
         <InfiniteScroll
           dataLength={articles.length}
           next={fetchMoreData}
-          hasMore={articles.length !== totalResults}
-           loader={<Spin />}
-         
+          hasMore={
+            totalResults === null ? true : articles.length !== totalResults
+          }
+          loader={<Spin />}
         >
           <div className="container">
             <div className="row">
-              {articles.map((element) => {
+              {articles.map((element , idx) => {
                 return (
-                  <div className="col-md-4 my-3" key={element.url}>
+                  <div className="col-md-4 my-3" key={idx}>
                     <Newsitem
                       title={element.title}
                       description={
@@ -148,7 +150,7 @@ const News = (props) => {
               })}
             </div>
 
-{/* {loading ? <Spin /> :  articles.length < totalResults && (   <div className="container text-center my-5" onClick={fetchMoreData}><button type="button" className="btn btn-success">Load more..</button></div>)      
+            {/* {loading ? <Spin /> :  articles.length < totalResults && (   <div className="container text-center my-5" onClick={fetchMoreData}><button type="button" className="btn btn-success">Load more..</button></div>)      
 } */}
           </div>
         </InfiniteScroll>
